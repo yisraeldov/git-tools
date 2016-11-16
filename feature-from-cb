@@ -1,0 +1,4 @@
+#!/bin/bash
+# creates a new feature bassed on clipboard contents
+
+git flow feature start "`xsel -b | tr -c "[:alnum:]" -`"
